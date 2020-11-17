@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestCase1 #1" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-11-01T14:59:19" hostname="DESKTOP-JGOCG90" time="4.952">
+  <properties/>
+  <testcase name="Generate token and store in excel" classname="TestCase1 #1" time="4.952">
+    <failure message="java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;406&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;406&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at StepDefinitions.MyStepdefs.iHaveUserNameAndPasswordAs(MyStepdefs.java:49)
+	at ✽.I have userName &quot;SampatUser33&quot; and password as &quot;Sampat@1235&quot;(file:///C:/Users/User/IdeaProjects/RestAssuredFramewrok/src/test/resources/features/TestCase1.feature:13)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+@scenario
+Scenario Outline: Generate token and store in excel                  # src/test/resources/features/TestCase1.feature:20
+{
+    "code": "1204",
+    "message": "User exists!"
+}
+  Given I have userName "SampatUser33" and password as "Sampat@1235" # StepDefinitions.MyStepdefs.iHaveUserNameAndPasswordAs(java.lang.String,java.lang.String)
+      java.lang.AssertionError: expected:<201> but was:<406>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at StepDefinitions.MyStepdefs.iHaveUserNameAndPasswordAs(MyStepdefs.java:49)
+	at âœ½.I have userName "SampatUser33" and password as "Sampat@1235"(file:///C:/Users/User/IdeaProjects/RestAssuredFramewrok/src/test/resources/features/TestCase1.feature:13)
+
+  And I verify user is posted in API with response code 201          # StepDefinitions.MyStepdefs.iVerifyUserIsPostedInAPI()
+  When I post the details to generate token                          # StepDefinitions.MyStepdefs.iPostTheUserDetailsToGenerateToken()
+  Then I verify that the token is stored in Data Provider excel      # StepDefinitions.MyStepdefs.iVerifyThatTheTokenIsStoredInDataProviderExcel()
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>
