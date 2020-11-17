@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestCase4" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-01T14:59:25" hostname="DESKTOP-JGOCG90" time="1.701">
+  <properties/>
+  <testcase name="" classname="TestCase4" time="1.701"/>
+  <system-out><![CDATA[
+@scenario
+Scenario Outline:                                                            # src/test/resources/features/TestCase4.feature:17
+  Given I get the title of the book for a given "9781491950296"              # StepDefinitions.MyStepdefs.iGetTheTitleOfTheBookForAGiven(java.lang.String)
+  Then I verify the title matches with "Programming JavaScript Applications" # StepDefinitions.MyStepdefs.iVerifyTheTitleMatchesWith(java.lang.String)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

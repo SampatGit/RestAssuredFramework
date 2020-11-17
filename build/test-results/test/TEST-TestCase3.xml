@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestCase3" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-01T14:59:25" hostname="DESKTOP-JGOCG90" time="0.027">
+  <properties/>
+  <testcase name="" classname="TestCase3" time="0.027"/>
+  <system-out><![CDATA[
+@scenario
+Scenario:                                                            # src/test/resources/features/TestCase3.feature:8
+  Given I fetch the user details from spreadsheet                    # StepDefinitions.MyStepdefs.iFetchTheUserDetailsFromSpreadsheet()
+  When I get the books for the assigned user from API.               # StepDefinitions.MyStepdefs.iGetTheBooksForTheAssignedUserFromAPI()
+  Then I verify that the stored details matches with the API results # StepDefinitions.MyStepdefs.iVerifyThatTheStoredDetailsMatchesWithTheAPIResults()
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

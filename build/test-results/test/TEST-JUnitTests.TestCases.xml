@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnitTests.TestCases" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-01T14:59:27" hostname="DESKTOP-JGOCG90" time="0.668">
+  <properties/>
+  <testcase name="testCaseFour" classname="JUnitTests.TestCases" time="0.668"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

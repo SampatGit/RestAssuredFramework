@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestCase1 #2" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-11-01T14:59:24" hostname="DESKTOP-JGOCG90" time="0.767">
+  <properties/>
+  <testcase name="Add book to a user" classname="TestCase1 #2" time="0.767">
+    <failure message="java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;406&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;406&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at StepDefinitions.MyStepdefs.iPostAUserDetailsWithAnd(MyStepdefs.java:60)
+	at ✽.I post a user details with &quot;Sampat75&quot; and &quot;Sampat@1234&quot;(file:///C:/Users/User/IdeaProjects/RestAssuredFramewrok/src/test/resources/features/TestCase2.feature:12)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+@scenario
+Scenario Outline: Add book to a user                               # src/test/resources/features/TestCase2.feature:18
+  Given I post a user details with "Sampat75" and "Sampat@1234"    # StepDefinitions.MyStepdefs.iPostAUserDetailsWithAnd(java.lang.String,java.lang.String)
+      java.lang.AssertionError: expected:<201> but was:<406>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at StepDefinitions.MyStepdefs.iPostAUserDetailsWithAnd(MyStepdefs.java:60)
+	at âœ½.I post a user details with "Sampat75" and "Sampat@1234"(file:///C:/Users/User/IdeaProjects/RestAssuredFramewrok/src/test/resources/features/TestCase2.feature:12)
+
+  When I post the details to generate token                        # StepDefinitions.MyStepdefs.iPostTheUserDetailsToGenerateToken()
+  And I post the User detail to add book with ISBN "9781491950296" # StepDefinitions.MyStepdefs.iPostTheUserDetailToAddBookWithISBN(java.lang.String)
+  Then I verify book is added to the user                          # StepDefinitions.MyStepdefs.iVerifyBookIsAddedToTheUser()
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

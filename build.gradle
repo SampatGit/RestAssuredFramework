@@ -1,0 +1,54 @@
+plugins {
+    id 'java'
+}
+plugins {
+    id "org.sonarqube" version "3.0"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'junit', name: 'junit', version: '4.12'
+
+    //Rest Assured dependency
+    compile group: 'io.rest-assured', name: 'rest-assured', version: '4.3.1'
+
+    // JSON Path dependency
+    compile group: 'io.rest-assured', name: 'json-path', version: '4.3.1'
+
+    //JSON parser Jackson
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.11.2'
+
+    //Serenity core
+    compile group: 'net.serenity-bdd', name: 'serenity-core', version: '2.3.4'
+
+    //Cucumber
+    compile group: 'io.cucumber', name: 'cucumber-java', version: '6.8.1'
+
+    //jackson databind
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.3'
+
+    //jackson annotations
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.11.3'
+
+
+    // POI OOXML
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.2'
+
+    //Cucumber Junit
+    compile group: 'io.cucumber', name: 'cucumber-junit', version: '6.8.1'
+
+}
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+test {
+    systemProperty "cucumber.options", System.properties.getProperty("cucumber.options")
+}
