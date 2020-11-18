@@ -4,10 +4,12 @@ pipeline{
    triggers{
        pollSCM('* * * * *')
    }
+   stages{
    stage('Compile'){
        steps{
          gradlew('clean test')
        }
+   }
    }
 
 }
